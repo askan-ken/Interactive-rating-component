@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&family=Overpass&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    padding: 15rem;
+}
+/* rating submission css start */
+.rating-card-container {
+    width: 400px;
+    background: hsl(213, 19%, 18%) ;
+    padding: 2rem;
+    border-radius: 20px;
+    position: relative;
+}
+.rating-card-desc {
+    text-align: left;
+    color: hsl(217, 12%, 63%);
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+.rating-card-desc h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.form {
+    width: 100%;
+}
+.form div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-radio-input {
+    display: none;
+}
+
+.radio-btn-label {
+    display: block;
+    cursor: pointer;
+    margin-right: 55px;
+    margin-bottom: 55px;
+}
+
+.radio-btn-span {
+    height: 50px;
+    width: 50px;
+    background: hsl(216, 6%, 33%);
+    border-radius: 100%;
+    position: absolute;
+}
+.radio-btn-span:hover {
+    background: hsl(25, 97%, 53%);
+    transition: .5s;
+}
+.radio-btn-span::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: hsl(217, 12%, 63%);
+    opacity: 0;
+    transition: .5s; 
+}
+
+.radio-btn-span div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-59%, -50%);
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    z-index: 2;
+
+}
+.form-radio-input:checked ~ .radio-btn-label .radio-btn-span::after{
+    opacity: 1; 
+    color: white;
+}
+
+.rating-card-sub-btn {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-top: 20px;
+}
+
+.rating-card-sub-btn button{
+    background: hsl(25, 97%, 53%);
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+.rating-card-sub-btn button:hover {
+    background:  hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* rating submission css end */
+
+/* thank you note css start */
+/* .hidden {
+    display: none;
+} */
+.thank-card-container {
+    display: block;
+    width: 400px;
+    background: hsl(213, 19%, 18%) ;
+    padding: 2rem;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+}
+.thank-card-container img{
+    display: inline-block;
+    width: 60%;
+    padding-bottom: 20px;
+}
+.thank-card-desc {
+    display: inline-block;
+    text-align: center;
+}
+.thank-card-desc p {
+    background: hsl(216, 7%, 27%);
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 20px;
+    color: hsl(25, 76%, 55%);
+}
+
+.thank-card-desc h1 {
+    color: hsl(0, 0%, 100%);
+    padding-top: 20px;
+}
+
+
+.thank-card-desc div {
+    color: hsl(217, 12%, 63%);
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+/* thank you note css end */
